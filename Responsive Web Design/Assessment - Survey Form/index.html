@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>FreeCodeCamp | Survey Form</title>
+
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">FreeCodeCamp Survey Form</h1>
+            <p id="description"><i>This is one of the certification projects of <a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a> as part of the <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design" target="_blank">Responsive Web Design Certification</a> course.</i></p>
+        </header>
+        
+        <main>
+            <form id="survey-form" action="" method="post">
+                <fieldset id="personal-info">
+                    <legend>&nbsp;Personal Information&nbsp;</legend>
+                    <label id="name-label" for="name">Full Name: <input id="name" name="name" type="text" placeholder="ex. John Doe" required></label>
+                    <br>
+                    <label id="email-label" for="email">Email: <input id="email" name="email" type="email" placeholder="ex. sample@domain.com" required></label>
+                    <br>
+                    <label id="number-label" for="number">Age (optional): <input id="number" name="number" type="number" min="13" max="100" placeholder="ex. 18"></label>
+                    <br>
+                    <label id="gender-label">Gender: </label>
+                        <label id="male-label" for="male" class="inline hand-cursor"><input id="male" name="gender" type="radio" value="male"> Male</label>
+                        <label id="female-label" for="female" class="inline hand-cursor"><input id="female" name="gender" type="radio" value="female"> Female</label>
+                        <label id="others-label" for="others" class="inline hand-cursor"><input id="others" name="gender" type="radio" value="others"> Others</label>
+                        <label id="preferred-label" for="preferred" class="inline hand-cursor"><input id="preferred" name="gender" type="radio" value="prefer-not-to-say" checked> Prefer not to say</label>
+                    <br><br>
+                        <label id="dropdown-label" for="dropdown">Current Role: 
+                        <select id="dropdown" name="dropdown">
+                            <option value="">Select one</option>
+                            <option value="student">Student</option>
+                            <option value="part-time">Part-Time Job</option>
+                            <option value="full-time">Full-Time Job</option>
+                            <option value="none">Stay at Home</option>
+                        </select>
+                    </label>
+                </fieldset>
+
+                <fieldset id="survey-questions">
+                    <legend>&nbsp;Survey Questions&nbsp;</legend>
+                    <label id="curriculum-label">Certification Programs taken/currently taking: </label>
+                        <label id="web-design-label" for="web-design" class="indent hand-cursor"><input id="web-design" name="certification" type="checkbox" value="web-design"> Responsive Web Design Certification</label>
+                        <label id="js-algo-ds-label" for="js-algo-ds" class="indent hand-cursor"><input id="js-algo-ds" name="certification" type="checkbox" value="js-algo-ds"> JavaScript Algorithms and Data Structures Certification</label>
+                        <label id="front-end-dev-label" for="front-end-dev" class="indent hand-cursort"><input id="front-end-dev" name="certification" type="checkbox" value="front-end-dev"> Front End Development Libraries Certification</label>
+                        <label id="data-vis-label" for="data-vis" class="indent hand-cursor"><input id="data-vis" name="certification" type="checkbox" value="data-vis"> Data Visualization Certification</label>
+                        <label id="rel-db-label" for="rel-db" class="indent hand-cursor"><input id="rel-db" name="certification" type="checkbox" value="rel-db"> Relational Database Certification</label>
+                        <label id="back-end-dev-label" for="back-end-dev" class="indent hand-cursor"><input id="back-end-dev" name="certification" type="checkbox" value="back-end-dev"> Back End Development and APIs Certification</label>
+                        <label id="qual-as-label" for="qual-as" class="indent hand-cursor"><input id="qual-as" name="certification" type="checkbox" value="qual-as"> Quality Assurance Certification</label>
+                        <label id="scie-comp-label" for="scie-comp" class="indent hand-cursor"><input id="scie-comp" name="certification" type="checkbox" value="scie-comp"> Scientific Computing with Python Certification</label>
+                        <label id="data-an-label" for="data-an" class="indent hand-cursor"><input id="data-an" name="certification" type="checkbox" value="data-an"> Data Analysis with Python Certification</label>
+                        <label id="info-sec-label" for="info-sec" class="indent hand-cursor"><input id="info-sec" name="certification" type="checkbox" value="info-sec"> Information Security Certification</label>
+                        <label id="mach-learn-label" for="mach-learn" class="indent hand-cursor"><input id="mach-learn" name="certification" type="checkbox" value="mach-learn"> Machine Learning with Python Certification</label>
+                        <label id="code-interview-label" for="code-interview" class="indent hand-cursor"><input id="code-interview" name="certification" type="checkbox" value="code-interview"> Coding Interview Prep</label>
+                    <br>
+                    <label for="comments">What can you say about the course/s you're taking? <textarea id="comments" name="comments" placeholder="Enter your comment..." required></textarea></label>
+                </fieldset>
+
+                <input id="submit" type="submit" value="Submit">
+            </form>
+        </main>
+        <hr>
+        <footer>
+            <br>
+            <h3>FreeCodeCamp Survey Form</h3>
+            <p>Authored by: <b>Edvince Joy M. Dannug</b></p>
+            <div class="socials">
+                <a id="facebook-link" href="https://www.facebook.com/ejmdannug" target="_blank" title="Facebook Link" class="fa fa-facebook-square"></a>
+                <a id="linkedin-link" href="https://www.linkedin.com/in/edvince-joy-dannug/" title="LinkedIn Link" target="_blank" class="fa fa-linkedin-square"></a>
+                <a id="github-link" href="https://github.com/EJ-Dannug" target="_blank" title="Github Link" class="fa fa-github-square"></a>
+                <a id="email-link" href="mailto:dannugejm@gmail.com" title="Email Link" class="fa fa-envelope"></a>
+            </div>
+            <p>with the help of</p>
+            <div class="sources">
+                <ul>
+                    <li><a href="https://fontawesome.com/" target="_blank">Font Awesome Icons</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a></li>
+                    <li>&nbsp;&nbsp;|&nbsp;&nbsp;</li>
+                    <li><a href="https://www.svgbackgrounds.com/" target="_blank">SVG Backgrounds</a></li>
+                </ul>
+            </div>
+            <p>as part of the FreeCodeCamp Responsive Web Design Certification program</p>
+            <br>
+        </footer>
+    </body>
+</html>
